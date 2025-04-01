@@ -1,0 +1,40 @@
+<body style="background-color: orange;">
+
+
+<h1><strong>Starshop</strong>: your monopoly-busting option for Starship parts!</h1>
+
+<div>
+    <h2>Browse through {{ numberOfStarships }} starships!</h2>
+
+    {% if numberOfStarships > 400 %}
+        <p>
+            {# This is a comment #}
+            That's a shipload of ships!
+        </p>
+    {% endif %}
+</div>
+
+<div>
+    <h2>My Ship</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ myShip.name }}</td>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <td>{{ myShip.class }}</td>
+        </tr>
+        <tr>
+            <th>Captain</th>
+            <td>{{ myShip.captain|upper }}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{ myShip.status }}</td>
+        </tr>
+    </table>
+</div>
+
+</body>
